@@ -62,7 +62,7 @@ public class LinkedList {
         return head;
     }
 
-    private static Node deleteKthNode(Node head, int k) {
+    private static Node deleteKthElement(Node head, int k) {
         if (head == null)
             return head;
         if (k == 1) {
@@ -179,7 +179,7 @@ public class LinkedList {
         System.out.println(checkIfPresent(head, 2));
         // display(deleteHead(head));
         // display(deleteTail(head));
-        // display(deleteKthNode(head, 1));
+        // display(deleteKthElement(head, 1));
         // display(deleteElement(head, 9));
         head = insertPosition(head, 1, 6);
         display(head);
