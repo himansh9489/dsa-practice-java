@@ -1,3 +1,5 @@
+import java.util.HashMap;
+
 class Node {
     int data;
     Node next;
@@ -189,5 +191,17 @@ public class LinkedList {
         display(head);
         head = insertBeforeValue(head, 7, 78);
         display(head);
+
+        HashMap<Node, Integer> mp = new HashMap<>();
+        Node temp = head;
+        while (temp != null) {
+            if (mp.containsKey(temp)) {
+                System.out.println(true);
+                break;
+            }
+            mp.put(head, 1);
+            temp = temp.next;
+        }
+        System.out.println(false);
     }
 }
